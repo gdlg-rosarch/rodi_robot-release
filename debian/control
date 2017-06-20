@@ -1,0 +1,13 @@
+Source: ros-kinetic-rodi-robot
+Section: misc
+Priority: extra
+Maintainer: Gary Servin <garyservin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-geometry-msgs, ros-kinetic-roslint, ros-kinetic-rospy, ros-kinetic-rosunit, ros-kinetic-sensor-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-rodi-robot
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-geometry-msgs, ros-kinetic-roslint, ros-kinetic-rospy, ros-kinetic-sensor-msgs
+Description: RoDI ROS package.
+ Allows to control a RoDI from the Robot Operating System (ROS) without the need to flash a custom firmware and just using the default firmware web services API.
